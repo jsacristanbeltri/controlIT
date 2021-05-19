@@ -1,0 +1,2 @@
+1;Pantallas
+2;Ordenadores

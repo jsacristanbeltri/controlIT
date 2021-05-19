@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManageSupplierController">
+    <children>
+        <Label layoutX="15.0" layoutY="19.0" text="Phone" />
+        <TableView fx:id="tvSupplier" layoutX="368.0" onMouseClicked="#seleccionar" prefHeight="800.0" prefWidth="831.0">
+            <columns>
+                <TableColumn fx:id="colPhoneSupplier" text="Phone" />
+                <TableColumn fx:id="colAddressSupplier" prefWidth="44.0" text="Address" />
+                <TableColumn fx:id="colEmailSupplier" prefWidth="71.0" text="Email" />
+                <TableColumn fx:id="colBussinesnameSuppliere" minWidth="0.0" prefWidth="95.0" text="Bussines name" />
+                <TableColumn fx:id="colCifdniSupplier" prefWidth="94.0" text="Cif / Dni" />
+            </columns>
+        </TableView>
+        <TextField fx:id="tfPhoneC" layoutX="109.0" layoutY="15.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="tfAddressC" layoutX="109.0" layoutY="51.0" />
+        <TextField fx:id="tfEmailC" layoutX="109.0" layoutY="87.0" />
+        <TextField fx:id="tfBussinesnameC" layoutX="109.0" layoutY="123.0" />
+        <Label layoutX="18.0" layoutY="50.0" text="Address" />
+        <Label layoutX="18.0" layoutY="86.0" text="Email" />
+        <Label layoutX="18.0" layoutY="122.0" text="Bussines Name" />
+        <Label layoutX="18.0" layoutY="162.0" text="Cif / Dni" />
+        <TextField fx:id="tfCifdniS" layoutX="109.0" layoutY="158.0" />
+        <Button fx:id="btUpdateSupplier" layoutX="104.0" layoutY="760.0" mnemonicParsing="false" onAction="#UpgradeSupplier" text="Update" />
+        <Button fx:id="btDeleteSupplier" layoutX="191.0" layoutY="760.0" mnemonicParsing="false" onAction="#DeleteSupplier" text="Delete" />
+        <Button fx:id="btAddSupplier" layoutX="31.0" layoutY="760.0" mnemonicParsing="false" onAction="#AddSupplier" text="Add" />
+    </children>
+</AnchorPane>

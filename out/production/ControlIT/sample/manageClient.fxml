@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManageClientController">
+    <children>
+        <Label layoutX="15.0" layoutY="19.0" text="Phone" />
+        <TableView fx:id="tvClient" layoutX="368.0" onMouseClicked="#seleccionar" prefHeight="800.0" prefWidth="831.0">
+            <columns>
+                <TableColumn fx:id="colPhoneClient" text="Phone" />
+                <TableColumn fx:id="colAddressClient" prefWidth="44.0" text="Address" />
+                <TableColumn fx:id="colEmailClient" prefWidth="71.0" text="Email" />
+                <TableColumn fx:id="colBussinesnameCliente" minWidth="0.0" prefWidth="95.0" text="Bussines name" />
+                <TableColumn fx:id="colFirstNameClient" prefWidth="94.0" text="First Name" />
+                <TableColumn fx:id="colSecondNameClient" prefWidth="78.0" text="Second Name" />
+                <TableColumn fx:id="colIbanClient" prefWidth="99.0" text="Iban" />
+            </columns>
+        </TableView>
+        <TextField fx:id="tfPhoneC" layoutX="109.0" layoutY="15.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="tfAddressC" layoutX="109.0" layoutY="51.0" />
+        <TextField fx:id="tfEmailC" layoutX="109.0" layoutY="87.0" />
+        <TextField fx:id="tfBussinesnameC" layoutX="109.0" layoutY="123.0" />
+        <Label layoutX="18.0" layoutY="50.0" text="Address" />
+        <Label layoutX="18.0" layoutY="86.0" text="Email" />
+        <Label layoutX="18.0" layoutY="122.0" text="Bussines Name" />
+        <Label layoutX="18.0" layoutY="162.0" text="First Name" />
+        <Label layoutX="18.0" layoutY="204.0" text="Second Name" />
+        <Label layoutX="21.0" layoutY="245.0" text="Iban" />
+        <TextField fx:id="tfFirstnameC" layoutX="109.0" layoutY="158.0" />
+        <Button fx:id="btUpdateClient" layoutX="104.0" layoutY="760.0" mnemonicParsing="false" onAction="#UpgradeClient" text="Update" />
+        <Button fx:id="btDeleteClient" layoutX="191.0" layoutY="760.0" mnemonicParsing="false" onAction="#DeleteClient" text="Delete" />
+        <Button fx:id="btAddClient" layoutX="31.0" layoutY="760.0" mnemonicParsing="false" onAction="#AddClient" text="Add" />
+      <TextField fx:id="tfSecondNameC" layoutX="109.0" layoutY="200.0" />
+      <TextField fx:id="tfIbanC" layoutX="109.0" layoutY="241.0" />
+    </children>
+</AnchorPane>

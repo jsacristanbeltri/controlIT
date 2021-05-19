@@ -1,0 +1,2 @@
+1;nombre1;111;17052021;965959889;C/alicante2;98784587A;softwareA@gmail.com;softwareAlicante;almacen1;1;Pantallas;notas;2;2;2;2;2;2;2;2;2;2;2;2
+2;nombre2;23;334433;965959889;C/alicante2;98784587A;softwareA@gmail.com;softwareAlicante;almacen2;2;Ordenadores;notas;2;2;2;2;2;2;2;2;2;2;2;2

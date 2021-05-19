@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManageSoftwareController">
+    <children>
+        <Label layoutX="24.0" layoutY="67.0" text="Name:" />
+        <TableView fx:id="tvSoftware" layoutX="369.0" layoutY="19.0" onMouseClicked="#seleccionar" prefHeight="800.0" prefWidth="831.0">
+            <columns>
+                <TableColumn fx:id="colIdSoftware" prefWidth="28.0" text="id" />
+                <TableColumn fx:id="colNameSoftware" text="name" />
+                <TableColumn fx:id="colStockSoftware" prefWidth="44.0" text="Stock" />
+                <TableColumn fx:id="colBuydateSoftware" prefWidth="71.0" text="Buy Date" />
+                <TableColumn fx:id="colLocationSoftware" minWidth="0.0" prefWidth="95.0" text="Location" />
+                <TableColumn fx:id="colCategorySoftware" prefWidth="94.0" text="Category" />
+                <TableColumn fx:id="colSupplierSoftware" prefWidth="78.0" text="Supplier" />
+            <TableColumn fx:id="colLicenseSoftware" prefWidth="75.0" text="License" />
+            <TableColumn fx:id="colMaintenanceSoftware" prefWidth="108.0" text="Maintenance" />
+            <TableColumn fx:id="colValiditySoftware" prefWidth="73.0" text="Validity" />
+            </columns>
+        </TableView>
+        <TextField fx:id="tfNombreH" layoutX="118.0" layoutY="63.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="tfStockH" layoutX="118.0" layoutY="99.0" />
+        <TextField fx:id="tfBuydateH" layoutX="118.0" layoutY="135.0" />
+        <TextField fx:id="tfLocationH" layoutX="118.0" layoutY="171.0" />
+        <Label layoutX="27.0" layoutY="98.0" text="Stock(number)" />
+        <Label layoutX="27.0" layoutY="134.0" text="Buy Date" />
+        <Label layoutX="27.0" layoutY="170.0" text="Location" />
+        <Label layoutX="27.0" layoutY="210.0" text="Category" />
+        <Label layoutX="27.0" layoutY="252.0" text="Supplier" />
+        <Label layoutX="24.0" layoutY="556.0" text="Notes" />
+        <TextArea fx:id="taNotesH" layoutX="84.0" layoutY="548.0" prefHeight="200.0" prefWidth="200.0" />
+        <Button fx:id="btUpdateSoftware" layoutX="104.0" layoutY="760.0" mnemonicParsing="false" onAction="#UpgradeSoftware" text="Update" />
+        <Button fx:id="btDeleteSoftware" layoutX="191.0" layoutY="760.0" mnemonicParsing="false" onAction="#DeleteSoftware" text="Delete" />
+        <Button fx:id="btAddSoftware" layoutX="31.0" layoutY="760.0" mnemonicParsing="false" onAction="#AddSoftware" text="Add" />
+        <ComboBox fx:id="cbCategoryH" layoutX="118.0" layoutY="206.0" prefWidth="150.0" />
+        <ComboBox fx:id="cbSupplierH" layoutX="118.0" layoutY="248.0" prefWidth="150.0" />
+      <Label layoutX="90.0" layoutY="19.0" text="SOFTWARE MANAGEMENT" />
+      <Label layoutX="25.0" layoutY="346.0" text="Maintenance" />
+      <Label layoutX="30.0" layoutY="300.0" text="License" />
+      <Label layoutX="15.0" layoutY="393.0" text="Validity(number)" />
+      <TextField fx:id="tfLicenseSoftware" layoutX="117.0" layoutY="296.0" />
+      <ComboBox fx:id="cbMaintenanceSoftware" layoutX="118.0" layoutY="342.0" prefWidth="150.0" />
+      <TextField fx:id="tfValiditySoftware" layoutX="119.0" layoutY="389.0" />
+      <Label layoutX="22.0" layoutY="434.0" text="Client rented" />
+      <ComboBox fx:id="cbClientrentedH" layoutX="118.0" layoutY="430.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

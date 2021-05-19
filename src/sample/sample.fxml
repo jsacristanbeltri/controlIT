@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <bottom>
+      <AnchorPane prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="558.0" layoutY="6.0" prefHeight="16.0" prefWidth="84.0" text="VERSION 1.0" />
+         </children></AnchorPane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="738.0" prefWidth="5.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <AnchorPane prefHeight="238.0" prefWidth="12.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="CONTROL IT SOFTWARE" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="313.0" prefWidth="583.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHardware" mnemonicParsing="false" onAction="#hardwareWindows" prefHeight="60.0" prefWidth="120.0" text="Hardware">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnSoftware" mnemonicParsing="false" onAction="#softwareWindows" prefHeight="60.0" prefWidth="120.0" text="Software">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnClients" mnemonicParsing="false" onAction="#ClientWindow" prefHeight="60.0" prefWidth="120.0" text="Clients">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnSuppliers" mnemonicParsing="false" onAction="#SupplierWindow" prefHeight="60.0" prefWidth="120.0" text="Suppliers">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
